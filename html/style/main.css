@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../images/background2.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header {
+    height: 5em;
+    width: 100%;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0 auto;
+    width: 6em;
+}
+
+div#nav_wrapper {
+    width: 100%;
+}
+
+nav {
+    margin: 0 auto;
+    width: 20em;
+}
+
+nav ul {
+    float: left;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    padding: 5px;
+    margin: 0 0.7em 0 0;
+}
+
+nav ul li.active {
+    text-decoration: underline;
+}
+
+nav ul li:last-child {
+    margin: 0 0 0 0;
+}
+
+nav ul li:hover {
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+
+div.center {
+    margin: 0 auto;
+    width: 30em;
+}
+
+section#socials {
+    display: none;
+}
+
+main {
+    margin: 2em 0 0 0;
+}
+
+article {
+    margin: 0 0 1em 0;
+}
+
+article h2 {
+    font-weight: normal;
+    margin: 0 0 0.5em 0;
+}
+
+section#showcase img {
+    height: 23em;
+}
+
+ul#hook {
+    float: right;
+    list-style: square;
+}
+
+ul#hook li {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin: 0 0 1em 0;
+}
+
+ul#hook li:first-child {
+    margin: 5em 0 1em 0;
+}
+
+ul#hook li:last-child {
+    margin: 8em 0 0 0;
+    list-style: none;
+}
+
+ul#hook li a {
+    background: indianred;
+    color: black;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+ul#hook li a:hover {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+
+
+
+
+
