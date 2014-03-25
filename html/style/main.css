@@ -79,6 +79,18 @@ article h2 {
     margin: 0 0 0.5em 0;
 }
 
+p.details {
+    display: block;
+}
+
+article a#showDetails {
+    display: block;
+}
+
+article a#hideDetails {
+    display: block;
+}
+
 section#showcase img {
     height: 23em;
 }
