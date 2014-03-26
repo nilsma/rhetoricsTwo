@@ -4,13 +4,14 @@
 }
 
 body {
-    background-image: url('../images/background2.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
+    overflow-y: scroll;
 }
 
 header {
     height: 5em;
+    margin: 0 0 3.5em 0;
     width: 100%;
 }
 
@@ -18,7 +19,7 @@ h1 {
     font-family: sans-serif;
     font-size: 3em;
     font-weight: normal;
-    margin: 0 auto;
+    margin: 0.5em auto 0.5em;
     width: 6em;
 }
 
@@ -43,7 +44,9 @@ nav ul li {
     margin: 0 0.7em 0 0;
 }
 
-nav ul li.active {
+nav ul li.selected {
+    background-color: indianred;
+    color: white;
     text-decoration: underline;
 }
 
@@ -55,6 +58,11 @@ nav ul li:hover {
     background-color: darkolivegreen;
     color: white;
     cursor: pointer;
+}
+
+hr {
+    margin: 0 auto;
+    width: 45%;
 }
 
 div.center {
@@ -77,10 +85,23 @@ article {
 article h2 {
     font-weight: normal;
     margin: 0 0 0.5em 0;
+    text-align: center;
+}
+
+article p {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin: 0 0 1em 0;
+}
+
+article span.celeb {
+    text-decoration: underline;
 }
 
 p.details {
+    background-color: whitesmoke;
     display: block;
+    padding: 1em;
 }
 
 article a#showDetails {
@@ -92,7 +113,7 @@ article a#hideDetails {
 }
 
 section#showcase img {
-    height: 23em;
+    height: 18em;
 }
 
 ul#hook {
@@ -107,17 +128,13 @@ ul#hook li {
 }
 
 ul#hook li:first-child {
-    margin: 5em 0 1em 0;
+    margin: 3em 0 1em 0;
 }
 
-ul#hook li:last-child {
-    margin: 8em 0 0 0;
-    list-style: none;
-}
-
-ul#hook li a {
+section#showcase a {
     background: indianred;
-    color: black;
+    color: white;
+    float: right;
     padding: 0.5em;
     text-decoration: none;
 }
