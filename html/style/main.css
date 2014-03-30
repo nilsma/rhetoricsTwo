@@ -4,26 +4,43 @@
 }
 
 body {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    overflow-y: scroll;
+    background-color: limegreen;
+//    overflow-y: scroll;
+    overflow: hidden;
 }
 
 header {
-    height: 5em;
+    height: 1em;
     margin: 0 0 3.5em 0;
     width: 100%;
 }
 
+header img {
+    display: block;
+    float: right;
+    height: 2.5em;
+    position: absolute;
+    top: 1em;
+    right: -2.5em;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
 h1 {
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 3em;
-    font-weight: normal;
-    margin: 0.5em auto 0.5em;
-    width: 6em;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 1em auto 0.4em;
+    text-align: center;
+    width: 10em;
 }
 
 div#nav_wrapper {
+    float: left;
+    display: none;
     width: 100%;
 }
 
@@ -46,7 +63,8 @@ nav ul li {
 
 nav ul li.selected {
     background-color: indianred;
-    color: white;
+    background-color: #fcff49;
+    color: darkolivegreen;
     text-decoration: underline;
 }
 
@@ -62,7 +80,11 @@ nav ul li:hover {
 
 hr {
     margin: 0 auto;
-    width: 45%;
+    width: 35em;
+}
+
+header div.center {
+    position: relative;
 }
 
 div.center {
@@ -83,6 +105,7 @@ article {
 }
 
 article h2 {
+    font-size: 1.7em;
     font-weight: normal;
     margin: 0 0 0.5em 0;
     text-align: center;
@@ -90,35 +113,52 @@ article h2 {
 
 article p {
     font-family: sans-serif;
-    font-size: 1.1em;
+    font-size: 0.95em;
     margin: 0 0 1em 0;
 }
 
 article span.celeb {
+    color: blue;
     text-decoration: underline;
 }
 
-p.details {
-    background-color: whitesmoke;
-    display: block;
-    padding: 1em;
+span#hideDetails,
+span#showDetails{
+    background-color: darkolivegreen;
+    color: white;
+    padding: 1px 3px 1px 3px;
 }
 
-article a#showDetails {
-    display: block;
+span#hideDetails:hover,
+span#showDetails:hover {
+    cursor: pointer;
 }
 
-article a#hideDetails {
+span#showDetails {
     display: block;
+    width: 6.5em;
+}
+
+span#hideDetails {
+    display: block;
+    width: 6.5em;
+}
+
+section#showcase {
+    height: 18em;
+    margin: 0 0 2.5em 0;
+    position: relative;
 }
 
 section#showcase img {
+    float: left;
     height: 18em;
 }
 
 ul#hook {
-    float: right;
+    float: left;
     list-style: square;
+    margin: 0 0 0 3em;
 }
 
 ul#hook li {
@@ -133,19 +173,46 @@ ul#hook li:first-child {
 
 section#showcase a {
     background: indianred;
+    background-color: yellow;
     color: white;
-    float: right;
+    color: darkolivegreen;
     padding: 0.5em;
+    position: absolute;
+      bottom: 2em;
+      right: 6em;
     text-decoration: none;
 }
 
-ul#hook li a:hover {
+a#target:hover {
     background-color: darkolivegreen;
     color: white;
 }
 
+footer {
+    height: 8em;
+    padding: 2em 0 0 0;
+    width: 100%;
+}
 
+footer h3 {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    text-decoration: underline;
+}
 
+footer p {
+    font-family: sans-serif;
+}
 
+div#footer_about {
+    float: left;
+    margin: 0 3.5em 0 0.6em;
+    text-align: center;
+}
 
-
+div#footer_contact {
+    float: left;
+    text-align: center;
+}

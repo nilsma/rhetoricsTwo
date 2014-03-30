@@ -50,6 +50,19 @@ function getElements() {
     return document.getElementsByClassName('details');
 }
 
+function toggleMenu() {
+    var nav = document.getElementById('nav_wrapper');
+    var header = document.getElementById('header');
+    var status = document.defaultView.getComputedStyle(nav, '').getPropertyValue('display');
+    if(status == 'block') {
+        nav.style.display='none';
+        header.style.height='1em';
+    } else {
+        nav.style.display='block';
+        header.style.height='5em';
+    }
+}
+
 window.onload = function() {
     hideDetails();
 }
