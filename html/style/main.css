@@ -4,8 +4,7 @@
 }
 
 body {
-    background-color: limegreen;
-//    overflow-y: scroll;
+    background-color: #67975c;
     overflow: hidden;
 }
 
@@ -62,9 +61,8 @@ nav ul li {
 }
 
 nav ul li.selected {
-    background-color: indianred;
-    background-color: #fcff49;
-    color: darkolivegreen;
+    background-color: #ebff57;
+    color: darkslategray;
     text-decoration: underline;
 }
 
@@ -172,10 +170,8 @@ ul#hook li:first-child {
 }
 
 section#showcase a {
-    background: indianred;
-    background-color: yellow;
-    color: white;
-    color: darkolivegreen;
+    background-color: #ebff57;
+    color: darkslategray;
     padding: 0.5em;
     position: absolute;
       bottom: 2em;
